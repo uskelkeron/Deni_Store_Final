@@ -1,0 +1,322 @@
+@import url(//db.onlinewebfonts.com/c/bb2e1211dfd31103079dbce7c49e1d4e?family=DINNeuzeitGroteskLTW01-BdCn);
+/* Universal CSS Reset  */
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root
+{
+    --main-font-color: #4d5052;
+    --second-main-background: #393c3e;
+    --header-background-color: #ffffff;
+    --special-red-background-color: #b73030; 
+    --text-color-white: #ffffff;
+    --background-color-hover: blue;
+    --border-line-color:red;
+
+
+}
+
+/* Site Container */
+#container
+{
+  
+    max-width: 1200px;
+    position:relative;
+    z-index: 20;
+    margin:0 auto;
+    
+}
+
+
+/*CSS Utility Class */
+
+.grid
+{
+    display: grid;
+}
+.gridTem1Col
+{
+    grid-template-columns: 1fr;
+}
+.gridTemp2Cols
+{
+    grid-template-columns: 1fr 1fr;
+}
+.gridTemp3Cols
+{
+    grid-template-columns: 1.8fr .4fr 1.8fr;
+}
+
+.gridTemp3Cols121
+{
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sunImage
+{
+    position:absolute;
+    top: -60px;
+    justify-self: center;
+}
+
+.aTag
+{
+    text-decoration: none;
+    color: var(--special-red-background-color)
+
+}
+.cart
+{
+    color:var(--text-color-white);
+    padding-right: 8px;
+}
+
+/** Header Section **/
+
+header
+{
+ 
+    position: sticky;
+    background-color: var(--header-background-color);
+    top:0;
+    z-index: 10;
+}
+
+header a
+{
+    text-decoration: none;
+    color: var(--main-font-color);
+    text-align: center;
+    vertical-align:unset;
+
+}
+
+header li
+{
+    display: inline-block;
+     
+}
+
+.Header_icon1
+{
+   padding-top: 20px;
+   padding-left: 30px;
+   display: inline-block;
+   
+}
+
+.Header_icon2
+{
+    
+    display:inline-block;
+    padding-left: 30px;
+   
+}
+
+header > nav li:nth-child(5)
+{
+
+   padding-right: 30px;
+
+}
+
+header > nav li
+{
+  padding:20px 10px 15px 5px; 
+  
+}
+
+header > div:nth-child(2)
+{
+ 
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+header > div:nth-child(2) > img
+{
+    width:95px;
+    max-width: 95px;
+    object-fit: cover;
+  
+}
+
+header > nav
+{
+    
+    text-align: right;
+}
+
+/* Hero Section */
+
+#hero
+{
+    column-gap: 8px;
+}
+
+#hero > div:nth-child(1)
+{
+    
+    width:100%;
+    height: 100vh;
+
+    background-image: url('../img/hero1.webp'); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top;
+    z-index: 5;
+  
+}
+
+#hero > div:nth-child(2)
+{
+    
+    width:100%;
+    height: 100vh;
+    background-image: url('../img/hero2.webp'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: inherit;
+    z-index: 5;
+  
+
+}
+
+
+#discount
+{
+    background-color: var(--special-red-background-color) ;    
+    color:var(--text-color-white);
+    padding:10px 15px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+#heroMale
+{
+
+    justify-content: right;
+    
+}
+
+#heroMale > div
+{
+    justify-self: right;
+}
+
+
+
+#heroMale > div>span:nth-child(1)
+{
+    
+    display: inline-block;
+    border:0;
+    color:var(--text-color-white);
+
+}
+
+#heroMale > div>span:nth-child(2)
+{
+    display: inline-block;
+    
+    background-color: var(--second-main-background);
+
+}
+
+
+#heroMale > div>span:nth-child(1) > input
+{
+    background-color: var(--second-main-background);
+    padding:10px 40px;
+    border:0;
+    color: var(--text-color-white);
+   
+
+}
+
+#heroMale > div>span:nth-child(2),button
+{
+    background-color: var(--second-main-background);
+    border:0;
+    padding: 5px 10px;
+ 
+}
+
+#heroMale > div>span:nth-child(1) > input:hover
+{
+    background-color: var(--background-color-hover);
+    border: 1px solid var(--special-red-background-color);
+}
+
+#heroMale > div>span:nth-child(3)
+{
+  background-color: var(--header-background-color);
+    padding: 8px 10px 9px 10px;
+    display:inline-block;
+    border:0;
+
+}
+
+#heroMale > div>span:nth-child(4)
+{
+  
+    background-color:var(--special-red-background-color);
+    padding:8px 18px 9px 18px;
+    display:inline-block;
+    border:0;
+    text-align: center;
+}
+
+#heroMale > div>span:nth-child(4) > span
+{
+    background-color: var(--header-background-color) ;
+    padding: 2px 6px;
+    border-radius: 50% 50%;
+    color: var(--special-red-background-color);
+}
+
+
+#banner
+{
+    background-color:var(--header-background-color);
+    width: 100%;
+    height: 150px;
+    position:absolute;
+    bottom:25%;
+    justify-self: center;
+    text-align: center;
+    align-content: center;
+    z-index: 10;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+
+}
+
+#banner > div:nth-child(2) > h1
+{
+    
+    color:#0f2c66;
+    font-weight:500;
+    font-size: 2rem;
+    word-spacing: 5px;
+
+
+}
+
+
+#banner > div:nth-child(2) > p
+{
+    font-size:1rem;
+    font-weight: 700;
+    font-family: roboto-thin, roboto, sans-serif;
+    padding-top: 5px;
+    
+
+}
