@@ -1453,6 +1453,16 @@ header > nav
         padding-right: 10px;
     }
 
+        #author
+    {
+        
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+  
+
+
+
       
       
       
@@ -1622,6 +1632,24 @@ header > nav
         text-align: center;
        
     }
+
+    #author
+    {
+        
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+ 
+    #author > div:nth-child(2)
+    {
+        display:none;
+        
+    }
+
+
+   
+
 
 
 
@@ -1907,6 +1935,12 @@ header > nav
         display:inline-block;
     }
 
+    
+    #author > div:nth-child(1) > p
+    {
+        padding: 20px 40px;
+    }
+
 
 
 
@@ -2007,6 +2041,11 @@ header > nav
         object-fit: cover;
         width:25px;
         
+    }
+
+    #author > div:nth-child(1) > p
+    {
+        padding: 20px 10px;
     }
 
     
