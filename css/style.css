@@ -284,7 +284,7 @@ header > nav
     width:100%;
     height: 110vh;
     position:relative;
-    background-image: url('../img/hero1.webp'); 
+    background-image: url(https://static.wixstatic.com/media/c837a6_0fd0bfc2bc654de9852fc15cb80744a8~mv2.jpg/v1/fill/w_582,h_1050,al_t,q_85,usm_0.66_1.00_0.01/c837a6_0fd0bfc2bc654de9852fc15cb80744a8~mv2.webp); 
     background-repeat: no-repeat;
     background-size:cover;
     background-position:top;
@@ -297,7 +297,7 @@ header > nav
     
     width:100%;
     height: 110vh;
-    background-image: url('../img/hero2.webp'); 
+    background-image: url(https://static.wixstatic.com/media/c837a6_d82be91226cb41899912a80e214f0e34~mv2.jpg/v1/fill/w_582,h_1050,al_t,q_85,usm_0.66_1.00_0.01/c837a6_d82be91226cb41899912a80e214f0e34~mv2.webp); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: inherit;
@@ -467,32 +467,32 @@ header > nav
 
 #clothesGallery1 > div:nth-child(2) > div
 {
-    background-image: url(../img/jeans1.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_4b6e108d4ff141a9a8b9460bc4419177~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_4b6e108d4ff141a9a8b9460bc4419177~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(3) > div
 {
-    background-image: url(../img/rose.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_8d89afc2f7e54590abd656133755fe99~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_8d89afc2f7e54590abd656133755fe99~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(4) > div
 {
-    background-image: url(../img/blazer.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_e6ecd7a4d6504ec8b509578cb45a5a99~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_e6ecd7a4d6504ec8b509578cb45a5a99~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(5) > div
 {
-    background-image: url(../img/female_jean.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_f32a877c7c8842b39f6cc795df94965e~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_f32a877c7c8842b39f6cc795df94965e~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(6) > div
 {
-    background-image: url(../img/handbag.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_2e6255f9058e47e1a7074b5a7af86636~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_2e6255f9058e47e1a7074b5a7af86636~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(7) > div
 {
-    background-image: url(../img/jacket1.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_19c385933e1847bdbbfc5906b0e7daab~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_19c385933e1847bdbbfc5906b0e7daab~mv2.webp);
 
 }
 
@@ -501,27 +501,27 @@ header > nav
 
 #clothesGallery1 > div:nth-child(2) > div:hover
 {
-    background-image: url(../img/jeans2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_fd5f6ed14ab14bf6b301b5edd77f9a16~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_fd5f6ed14ab14bf6b301b5edd77f9a16~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(3) > div:hover
 {
-    background-image: url(../img/rose2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_db783dcee180489c917192359b3bdd9f~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_db783dcee180489c917192359b3bdd9f~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(4) > div:hover
 {
-    background-image: url(../img/blazer2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_21b13fc896bb4e2fa2fc64910a3a9d30~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_21b13fc896bb4e2fa2fc64910a3a9d30~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(5) > div:hover
 {
-    background-image: url(../img/female_jeans2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_4b716905e59445dcbd0ea310f3848655~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_4b716905e59445dcbd0ea310f3848655~mv2.webp);
 }
 
 #clothesGallery1 > div:nth-child(7) > div:hover
 {
-    background-image: url(../img/jacket2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_4892ef5c0b6c474faac552d551df443d~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_4892ef5c0b6c474faac552d551df443d~mv2.webp);
 }
 
 
@@ -794,7 +794,7 @@ header > nav
 
   #JeansSection > div
   {
-    background-image: url(../img/navybackground.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_6fccdab905194035a8f18daf66ef98db~mv2.jpg/v1/fill/w_980,h_897,al_c,q_85,usm_0.66_1.00_0.01/c837a6_6fccdab905194035a8f18daf66ef98db~mv2.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -863,51 +863,51 @@ header > nav
 
 #JeanGallary > div:nth-child(1) > div
 {
-    background-image: url(../img/jeangrid1.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_84868a50d764480994211ba5e233762d~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_84868a50d764480994211ba5e233762d~mv2.webp);
   
   
 }
 
 #JeanGallary > div:nth-child(2) > div
 {
-    background-image: url(../img/jeangrid2.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_8def62092ce6439688f02c3dec9ffbad~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_8def62092ce6439688f02c3dec9ffbad~mv2.webp);
 
 }
 
 #JeanGallary > div:nth-child(3) > div
 {
-    background-image: url(../img/jeangrid3.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_0fad758217904fe6821e6c47aaf75063~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_0fad758217904fe6821e6c47aaf75063~mv2.webp);
     
 }
 
 #JeanGallary > div:nth-child(4) > div
 {
-    background-image: url(../img/jeangrid5.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_d48a28853eb64a08b33f4146c690439c~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_d48a28853eb64a08b33f4146c690439c~mv2.webp);
     
 }
 
 #JeanGallary > div:nth-child(5) > div
 {
-    background-image: url(../img/jeangrid6.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_0ea338f18c2a43b080040328dba51eea~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_0ea338f18c2a43b080040328dba51eea~mv2.webp);
     
 }
 
 #JeanGallary > div:nth-child(6) > div
 {
-    background-image: url(../img/jeangrid7.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_099b7f0fec7c4048a23333061877b60e~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_099b7f0fec7c4048a23333061877b60e~mv2.webp);
    
 }
 
 
 #JeanGallary > div:nth-child(3) > div:hover
 {
-    background-image: url(../img/jeangrid4.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_c3d1680bbcde404ba524c42c6240be0e~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_c3d1680bbcde404ba524c42c6240be0e~mv2.webp);
     
 }
 
 #JeanGallary > div:nth-child(6) > div:hover
 {
-    background-image: url(../img/jeangrid8.webp);
+    background-image: url(https://static.wixstatic.com/media/c837a6_4ccabd59572f4a81b3c20e7ef06dc1cd~mv2.jpg/v1/fill/w_280,h_374,al_c,q_80,usm_0.66_1.00_0.01/c837a6_4ccabd59572f4a81b3c20e7ef06dc1cd~mv2.webp);
    
 }
 
@@ -925,7 +925,7 @@ header > nav
   {
       width: 100%;
       height: 80vh;
-      background-image: url(../img/parrallex.webp);
+      background-image: url(https://static.wixstatic.com/media/c837a6_461bcbb5400946d59a7a77c2e9bf65f0~mv2.jpg/v1/fill/w_980,h_897,al_c,q_85,usm_0.66_1.00_0.01/c837a6_461bcbb5400946d59a7a77c2e9bf65f0~mv2.webp);
       background-repeat: no-repeat;
       background-size: cover;
       background-position:top;
