@@ -1037,8 +1037,8 @@ header > nav
 
 #footerSearch
 {
-    width:120px;
-    height:45px;
+    width:90px;
+    height:40px;
     padding-left: 55px;
     
 }
@@ -1046,14 +1046,20 @@ header > nav
 .shopButton1
 {
     text-decoration: none;
-    width:123px;
-    height: 48px;
-    padding-top:15px;
+    width:60px;
+    height: 40px;
+   
     background-color: var(--special-red-background-color);
     color: var(--text-color-white);
     display: inline-block;
     border-radius: 5px 5px;
     text-align: center;
+    border-left: none;
+}
+
+#footerInfo > div:nth-child(4) span
+{
+    display: inline-block;
 }
 
 
@@ -1135,6 +1141,13 @@ header > nav
 
 }
 
+
+#footerInfo
+{
+ 
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
 
 
 
@@ -1591,6 +1604,13 @@ header > nav
         text-align: center;
         padding: 15px 10px;
     }
+
+    #footerInfo
+{
+ 
+    grid-template-columns: 1fr 1fr;
+
+}
     
     
     
@@ -1745,6 +1765,13 @@ header > nav
     {
     
         display:none;
+    }
+
+    #footerInfo
+    {
+    
+        grid-template-columns: 1fr;
+
     }
     
     
