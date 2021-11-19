@@ -937,7 +937,7 @@ header > nav
   footer
   {
       width: 100%;
-      height: 60vh;
+     
       bottom: 0px;
       position:relative
   }
@@ -1060,6 +1060,32 @@ header > nav
 #footerInfo > div:nth-child(4) span
 {
     display: inline-block;
+}
+
+#payment
+{
+   
+    padding: 10px 0;
+    width:90%;
+    margin:0 auto;
+
+    border: 1px solid var(--special-font-color-for-heading);
+    border-left: none;
+}
+
+#payment > div:nth-child(1) > h2
+{
+    color:var(--special-font-color-for-heading);
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    font-size: 15px;
+    padding: 8px 40px;
+
+}
+
+#payment > div:nth-child(2) 
+{
+    text-align: right;
+    padding-right: 10px;
 }
 
 
@@ -1373,6 +1399,26 @@ header > nav
           text-align: center;
           padding: 15px 15px;
       }
+
+
+      #payment
+    {
+        grid-template-columns: 1fr 1.5fr;
+    
+    }
+
+    #payment > div:nth-child(1) > h2
+    {
+        font-size: 12px;
+ 
+    }
+
+    #payment > div:nth-child(2) 
+    {
+        text-align: right;
+        padding-right: 10px;
+    }
+
       
       
       
@@ -1509,6 +1555,39 @@ header > nav
           top:308px;
 
       }
+
+            
+      .socialMediaAlign
+      {
+          text-align: center;
+          padding:40px 15px;
+      }
+        
+      .socialImg
+      {
+          text-align: center;
+          padding: 15px 15px;
+      }
+
+
+      #payment
+    {
+        grid-template-columns: 1fr;
+    
+    }
+
+    #payment > div:nth-child(1) > h2
+    {
+        font-size: 15px;
+        text-align: center;
+ 
+    }
+
+    #payment > div:nth-child(2) 
+    {
+        text-align: center;
+        padding-right: 10px;
+    }
 
 
 
@@ -1775,7 +1854,23 @@ header > nav
     }
     
     
-    
+    #payment > div:nth-child(1) > h2 
+    {
+        font-size: 13px;
+    } 
+
+    #payment > div:nth-child(2) 
+    {
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    #payment > div:nth-child(2) > img
+    {
+        object-fit: cover;
+        width:30px;
+    }
+
 
 
 
@@ -1870,6 +1965,14 @@ header > nav
         text-align: center;
         padding:45px 5px;
     }
+
+    #payment > div:nth-child(2) > img
+    {
+        object-fit: cover;
+        width:25px;
+        
+    }
+
     
 
 }
