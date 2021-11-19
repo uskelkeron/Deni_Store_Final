@@ -11,26 +11,33 @@
 :root
 {
     --main-font-color: #4d5052;
-    --second-main-background: #393c3e;
+    --second-main-background: #393c3e; 
     --header-background-color: #ffffff;
     --special-red-background-color: #b73030; 
     --text-color-white: #ffffff;
     --background-color-hover: blue;
     --border-line-color:red;
+    --special-font-color-for-heading: #0f2c66;
+    --special-light-blue: #e0effb;
+
+
 
 
 }
 
-/* Site Container */
+/* Site Container and Defaults*/
 #container
 {
   
-    max-width: 1200px;
+    width:100%;
     position:relative;
     z-index: 20;
     margin:0 auto;
+    font-family: roboto-thin, roboto, sans-serif;
+    color:var(--main-font-color);
     
 }
+
 
 
 /*CSS Utility Class */
@@ -57,6 +64,34 @@
     grid-template-columns: 1fr 2fr 1fr;
 }
 
+.gridTemp5Cols
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.gridTemp6Cols
+{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.dropDown
+{
+    display: none;
+}
+
+.responsiveSearch
+{
+    display:none;
+}
+
+.logoImg
+{
+    width:95px;
+    max-width: 95px;
+    height: 35px;
+    object-fit: cover;
+  
+}
+
 .sunImage
 {
     position:absolute;
@@ -76,6 +111,94 @@
     padding-right: 8px;
 }
 
+.specialFont
+{
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+}
+
+.outofStock
+{
+    display:none;
+}
+
+
+.font-size
+{
+    font-size: smaller;
+    font-weight: bold;
+}
+
+.font-size2
+{
+    font-size: 12px;
+    padding-left: 10px;
+
+}
+
+.Colorwhite
+{
+    color:var(--text-color-white);
+}
+
+.shopButton
+{
+    text-decoration: none;
+    width:123px;
+    height: 48px;
+    padding-top:15px;
+    background-color: var(--special-red-background-color);
+    color: var(--text-color-white);
+    display: inline-block;
+    border-radius: 5px 5px;
+    text-align: center;
+}
+
+.productGallary
+{
+    width:100%;
+    height: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.bestSeller
+{
+    background-color:var(--special-red-background-color);
+    color: var(--text-color-white);
+    padding:4px 8px;
+    position:absolute;
+    display:inline-block;
+    z-index: 2;
+}
+
+.price
+{
+    padding-bottom: 4px;
+    padding-left: 2px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Ropa Sans', sans-serif; 
+    color: var(--special-font-color-for-heading);
+}
+
+.ProductGalaryContainer
+{
+    height: 45vh;
+}
+
+
+.alignSelfCenter
+{
+    align-self: center;
+}
+
+::placeholder
+{
+    color: var(--text-color-white);
+}
 /** Header Section **/
 
 header
@@ -84,7 +207,7 @@ header
     position: sticky;
     background-color: var(--header-background-color);
     top:0;
-    z-index: 10;
+    z-index: 20;
 }
 
 header a
@@ -92,8 +215,7 @@ header a
     text-decoration: none;
     color: var(--main-font-color);
     text-align: center;
-    vertical-align:unset;
-
+    
 }
 
 header li
@@ -139,13 +261,6 @@ header > div:nth-child(2)
     
 }
 
-header > div:nth-child(2) > img
-{
-    width:95px;
-    max-width: 95px;
-    object-fit: cover;
-  
-}
 
 header > nav
 {
@@ -158,14 +273,17 @@ header > nav
 #hero
 {
     column-gap: 8px;
+    position:relative;
+    
+
 }
 
 #hero > div:nth-child(1)
 {
     
     width:100%;
-    height: 100vh;
-
+    height: 110vh;
+    position:relative;
     background-image: url('../img/hero1.webp'); 
     background-repeat: no-repeat;
     background-size:cover;
@@ -178,7 +296,7 @@ header > nav
 {
     
     width:100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url('../img/hero2.webp'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,14 +323,14 @@ header > nav
     
 }
 
-#heroMale > div
+.searchDesign > div
 {
     justify-self: right;
 }
 
 
 
-#heroMale > div>span:nth-child(1)
+.searchDesign > span:nth-child(1)
 {
     
     display: inline-block;
@@ -221,7 +339,7 @@ header > nav
 
 }
 
-#heroMale > div>span:nth-child(2)
+.searchDesign > span:nth-child(2)
 {
     display: inline-block;
     
@@ -230,7 +348,7 @@ header > nav
 }
 
 
-#heroMale > div>span:nth-child(1) > input
+.searchDesign>span:nth-child(1) > input
 {
     background-color: var(--second-main-background);
     padding:10px 40px;
@@ -240,7 +358,7 @@ header > nav
 
 }
 
-#heroMale > div>span:nth-child(2),button
+.searchDesign>span:nth-child(2),button
 {
     background-color: var(--second-main-background);
     border:0;
@@ -248,13 +366,13 @@ header > nav
  
 }
 
-#heroMale > div>span:nth-child(1) > input:hover
+.searchDesign>span:nth-child(1) > input:hover
 {
     background-color: var(--background-color-hover);
     border: 1px solid var(--special-red-background-color);
 }
 
-#heroMale > div>span:nth-child(3)
+.searchDesign>span:nth-child(3)
 {
   background-color: var(--header-background-color);
     padding: 8px 10px 9px 10px;
@@ -263,7 +381,7 @@ header > nav
 
 }
 
-#heroMale > div>span:nth-child(4)
+.searchDesign>span:nth-child(4)
 {
   
     background-color:var(--special-red-background-color);
@@ -273,7 +391,7 @@ header > nav
     text-align: center;
 }
 
-#heroMale > div>span:nth-child(4) > span
+.searchDesign>span:nth-child(4) > span
 {
     background-color: var(--header-background-color) ;
     padding: 2px 6px;
@@ -285,10 +403,10 @@ header > nav
 #banner
 {
     background-color:var(--header-background-color);
-    width: 100%;
+    width: 80%;
     height: 150px;
     position:absolute;
-    bottom:25%;
+    top:60%;
     justify-self: center;
     text-align: center;
     align-content: center;
@@ -299,10 +417,11 @@ header > nav
 
 }
 
+
 #banner > div:nth-child(2) > h1
 {
     
-    color:#0f2c66;
+    color:var(--special-font-color-for-heading);
     font-weight:500;
     font-size: 2rem;
     word-spacing: 5px;
@@ -320,3 +439,1411 @@ header > nav
     
 
 }
+
+
+/* Gallary with Clothing products */
+
+
+#clothesGallery1
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 60px 50px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#clothesGallery1 > div:nth-child(1)
+{
+   
+    grid-column-start: 1;
+    grid-column-end: 7;
+    padding: 25px 0;
+    font-family: 'Ropa Sans', sans-serif; 
+    color: var(--special-font-color-for-heading);
+}
+
+
+
+#clothesGallery1 > div:nth-child(2) > div
+{
+    background-image: url(../img/jeans1.webp);
+}
+
+#clothesGallery1 > div:nth-child(3) > div
+{
+    background-image: url(../img/rose.webp);
+}
+
+#clothesGallery1 > div:nth-child(4) > div
+{
+    background-image: url(../img/blazer.webp);
+}
+
+#clothesGallery1 > div:nth-child(5) > div
+{
+    background-image: url(../img/female_jean.webp);
+}
+
+#clothesGallery1 > div:nth-child(6) > div
+{
+    background-image: url(../img/handbag.webp);
+}
+
+#clothesGallery1 > div:nth-child(7) > div
+{
+    background-image: url(../img/jacket1.webp);
+
+}
+
+
+/* Product Gallary Hover Section  */
+
+#clothesGallery1 > div:nth-child(2) > div:hover
+{
+    background-image: url(../img/jeans2.webp);
+}
+
+#clothesGallery1 > div:nth-child(3) > div:hover
+{
+    background-image: url(../img/rose2.webp);
+}
+
+#clothesGallery1 > div:nth-child(4) > div:hover
+{
+    background-image: url(../img/blazer2.webp);
+}
+
+#clothesGallery1 > div:nth-child(5) > div:hover
+{
+    background-image: url(../img/female_jeans2.webp);
+}
+
+#clothesGallery1 > div:nth-child(7) > div:hover
+{
+    background-image: url(../img/jacket2.webp);
+}
+
+
+
+
+#clothesGallery1 > div > img
+{
+    width:100%;
+    position: relative;
+    top:0;
+    z-index: 1;
+}
+
+#clothesGallery1 > div  p
+{
+    padding:4px 2px;
+}
+
+/* All Denmin Section */
+
+#allDenim
+{
+    display: grid;
+    grid-template-columns: 2.4fr 1.6fr;
+    background-color:var(--special-light-blue);
+    width:100%;
+    height: 680px;
+}
+
+#allDenim > div:nth-child(1)
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#allDenim > div:nth-child(1) > div
+{
+    width: 60%;
+    
+    align-self: center;
+    justify-self: center;
+    padding:90px 90px;
+ 
+}
+
+#allDenim > div > div > h3
+{
+   font-family:  Helvetica, sans-serif;
+   font-size: 14px;
+   color:var(--second-main-background);
+}
+
+#allDenim > div:nth-child(2)
+{
+    height: 680px;
+}
+
+#allDenim > div:nth-child(2) > img
+{
+    width:100%;
+    max-width: 100%;
+    height:740px;
+    object-fit:cover;
+    object-position: 40% 40%;
+    position:relative;
+    top:90px;
+    z-index: 1; 
+   
+}
+
+
+.DenminSpecialFont
+{
+    
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    font-size: 2rem;
+    padding: 10px 0px;
+    color:  var(--special-font-color-for-heading);
+}
+
+.demip2
+{
+    padding: 10px 0px 20px 0px;
+   
+}
+
+.shoppingButton    
+{
+    text-decoration: none;
+    padding:10px 10px;
+    background-color: var(--special-red-background-color);
+    color: var(--text-color-white);
+    display: inline-block;
+    border-radius: 5px 5px;
+
+}
+
+/* Earth-Friendly Sectioin   */
+
+
+#Earth_Friendly
+{
+    display:grid;
+    grid-template-columns: 2.3fr 1.7fr;
+   
+}
+
+#Earth_Friendly > div:nth-child(1)
+{
+    width:100%;
+   
+    
+    display:grid;
+    grid-template-columns: 1f;
+   
+}
+
+#Earth_Friendly > div:nth-child(1) > div:nth-child(1)
+{
+    width: 80%;
+    height:80vh;
+    justify-self: center;
+    text-align: center;
+}
+
+#Earth_Friendly > div:nth-child(1) > div:nth-child(1) img
+{
+    padding-top:90px;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+  
+    
+}
+
+#Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+{
+    
+    width:80%;
+    justify-self: center;
+    padding-left:165px;
+    padding-right: 165px;
+    padding-top:30px;
+    padding-bottom: 30px;
+    
+}
+
+#Earth_Friendly > div:nth-child(1) > div:nth-child(2) > h2
+{
+    font-weight: lighter;
+}
+
+#Earth_Friendly > div:nth-child(1) > div:nth-child(2) > p
+{
+    padding:20px 0; 
+    padding-bottom: 30px;
+}
+
+#Earth_Friendly > div:nth-child(2)
+{
+    width:100%;
+
+    display:grid;
+    grid-template-columns: 1fr;
+  
+  
+}
+
+#Earth_Friendly > div:nth-child(2) > div
+{
+    justify-self: center;
+    align-self: center;
+    width:80%;
+    text-align: center;
+    margin-top: 50px;
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    
+    
+    
+}
+
+#Earth_Friendly > div:nth-child(2) > div img
+{
+   
+    object-fit: cover;
+    object-position: 40% 40%;
+    max-width: 100%;
+    justify-self: center;
+    width: 310px;  
+    z-index: 5;  
+  
+}
+
+.bubble6 {
+    position: absolute;
+    width: 280px;
+    height: 70px;
+    background-color: #b73030;
+    border: 1px solid  #b73030;
+    border-radius: 4px;
+    justify-self: center;
+    padding: 15px;
+    text-align: center;
+    color:white;
+    z-index: 10;
+    top:50px;
+
+}
+  
+  .bubble6-arrow {
+    position: absolute;
+    right: 15px;
+    bottom: -20px;
+    border-left: 21px solid transparent;
+    border-top: 20px solid #b73030;
+   
+  
+  }
+  
+  .bubble6 > h2
+  {
+    position:absolute;
+    top:-30px;
+    left:70px;
+    color: var(--special-font-color-for-heading);
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    font-size: 45px;
+    
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .bubble6 > p
+  {
+      font-size: 18px;
+      font-family: DINNeuzeitGroteskLTW01-BdCn;
+  }
+
+
+  #specialButton
+  {
+      position: absolute;
+      bottom:65px;
+      justify-self: center;
+      z-index: 10;
+  }
+  #specialButton > a
+  {
+    background-color:white;
+    color:var(--second-main-background);
+    opacity: .9;
+  }
+
+  /* Demin Short Jeans Section */
+
+  #JeansSection
+  {
+      width: 100%;
+      
+      position:relative;
+      top:0;
+      
+    
+  
+  }
+
+  #JeansSection > div
+  {
+    background-image: url(../img/navybackground.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    
+   
+
+  }
+
+  #JeansSection > div > h3
+  {
+      
+      padding:120px 80px 5px 80px;
+      font-family: roboto-thin, roboto, sans-serif;
+  }
+
+  #JeansSection > div > p:nth-child(2)
+  {
+     
+      padding: 20px 70% 10px 80px;
+      font-family: DINNeuzeitGroteskLTW01-BdCn;
+      font-size: 2rem;
+      color:var(--special-font-color-for-heading);
+  }
+
+  #JeansSection > div > p:nth-child(3)
+{
+
+    display:inline-block;
+    padding: 10px 62% 80px 80px;
+    font-family: roboto-thin, roboto, sans-serif;
+}
+
+
+#AllDenimButton
+{
+    position:absolute;
+    top:300px;
+    right:90px;
+    z-index: 9;
+    
+}
+
+#AllDenimButton > a
+{
+    padding: 20px 20px;
+}
+
+#AllDenimButton span
+{
+    padding-bottom: 90px;
+}
+
+#JeanGallary
+{
+    width:95%;
+    margin:0 auto;
+    row-gap: 10px;
+    column-gap: 10px;
+    position:relative;
+    top:0px;
+    z-index: 5;
+
+}
+
+
+#JeanGallary > div:nth-child(1) > div
+{
+    background-image: url(../img/jeangrid1.webp);
+  
+  
+}
+
+#JeanGallary > div:nth-child(2) > div
+{
+    background-image: url(../img/jeangrid2.webp);
+
+}
+
+#JeanGallary > div:nth-child(3) > div
+{
+    background-image: url(../img/jeangrid3.webp);
+    
+}
+
+#JeanGallary > div:nth-child(4) > div
+{
+    background-image: url(../img/jeangrid5.webp);
+    
+}
+
+#JeanGallary > div:nth-child(5) > div
+{
+    background-image: url(../img/jeangrid6.webp);
+    
+}
+
+#JeanGallary > div:nth-child(6) > div
+{
+    background-image: url(../img/jeangrid7.webp);
+   
+}
+
+
+#JeanGallary > div:nth-child(3) > div:hover
+{
+    background-image: url(../img/jeangrid4.webp);
+    
+}
+
+#JeanGallary > div:nth-child(6) > div:hover
+{
+    background-image: url(../img/jeangrid8.webp);
+   
+}
+
+#JeanGallary p
+{
+    padding: 10px 0px 5px 0px;
+}
+
+#JeanGallary > div
+{
+    padding-bottom: 90px;
+}
+
+  #parallax
+  {
+      width: 100%;
+      height: 80vh;
+      background-image: url(../img/parrallex.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:top;
+      background-attachment: fixed;
+    
+  }
+
+
+  footer
+  {
+      width: 100%;
+      height: 60vh;
+      bottom: 0px;
+      position:relative
+  }
+
+  #social > div
+  {
+      width:100%;
+      font-family: DINNeuzeitGroteskLTW01-BdCn;
+      background-color: var(--special-font-color-for-heading);
+      height: 120px;
+        
+  }
+
+  #social > div span
+{
+    font-size: 2.5rem;
+   
+    
+   color:var(--text-color-white);
+}
+
+.socialMediaAlign
+{
+    text-align: center;
+    padding:40px 30px;
+}
+  
+.socialImg
+{
+    text-align: center;
+    padding: 15px 30px;
+}
+
+#footerInfo
+{
+    width:92%;
+  
+    margin: 30px 4%;
+    padding-bottom: 20px;
+
+}
+
+
+#footerInfo ul
+{
+    list-style-type: none;
+}
+
+#footerInfo h3
+{
+    color:var(--special-font-color-for-heading);
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    padding: 20px 10px 10px 55px;
+}
+
+
+
+.info
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:12px;
+    font-weight: 400;
+    padding: 2px 10px 10px 55px;
+    text-decoration: none;
+    color:var(--second-main-background);
+}  
+
+
+
+#footerInfo > div:nth-child(4) 
+{
+    padding-left: 55px;
+}
+
+#footerInfo > div:nth-child(4) > h4
+{
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    padding:20px 15px 10px 0px;
+   
+    
+}
+
+#footerInfo > div:nth-child(4) h2
+{
+    color:var(--special-font-color-for-heading);
+    font-family: DINNeuzeitGroteskLTW01-BdCn;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+#footerInfo > div:nth-child(4) h5
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-bottom: 15px;
+}
+
+#footerSearch
+{
+    width:120px;
+    height:45px;
+    padding-left: 55px;
+    
+}
+
+.shopButton1
+{
+    text-decoration: none;
+    width:123px;
+    height: 48px;
+    padding-top:15px;
+    background-color: var(--special-red-background-color);
+    color: var(--text-color-white);
+    display: inline-block;
+    border-radius: 5px 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* Media Query for Responsive Design */
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) 
+{  
+
+}
+
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) 
+{
+
+    header > nav li:nth-child(5)
+    {
+        padding-right: 60px;
+    }
+
+ 
+
+    .searchDesign>span:nth-child(1) > input
+    {
+        padding:10px 20px;
+        
+    }
+
+    .searchDesign>span:nth-child(2),button
+    {
+        padding: 5px 5px;
+    }
+
+    .searchDesign>span:nth-child(3)
+    {
+        padding: 8px 5px 9px 5px;
+    }
+
+    .searchDesign>span:nth-child(4)
+    {
+        padding:8px 10px 9px 10px;
+    }
+
+
+    
+#Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+{
+    padding-left:105px;
+    padding-right: 105px;
+
+}
+
+
+
+#JeansSection > div > p:nth-child(2)
+{
+   
+    padding: 20px 56% 10px 80px;
+}
+
+#JeansSection > div > p:nth-child(3)
+{
+
+    padding: 10px 60% 50px 80px;
+}
+
+
+#AllDenimButton
+{
+   
+    top:258px;
+
+}
+
+
+
+
+    
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) 
+{ 
+
+    .smallScreenHeader
+    {
+        display:none;
+    }
+
+    .bigScreenHeader
+    {
+        display:unset;
+    }
+    header > nav li
+    {
+        padding: 10px 5px;
+       
+    }
+
+    .gridTemp3Cols
+    {
+        grid-template-columns: 1fr .4fr;
+    }
+
+    header > div:nth-child(1)
+    {
+        text-align: right;
+        padding: 10px 2px;
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 2;
+ 
+    }
+
+    header > div:nth-child(2) 
+    {
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+           
+    }
+
+
+    header > nav li
+    {
+      padding:20px 5px 20px 5px; 
+      
+    }
+
+    header > nav
+    {  
+        text-align: right; 
+    }
+
+    .Header_icon1
+    {
+    padding-top: 10px;
+    padding-left: 5px;
+   
+    
+    }
+
+    .Header_icon2
+    {
+        padding-left: 15px;
+    
+    }
+
+    .searchDesign>span:nth-child(1) > input
+    {
+        padding:10px 10px;
+        
+    }
+
+    .searchDesign>span:nth-child(2),button
+    {
+        padding: 5px 3px;
+    }
+
+    .searchDesign>span:nth-child(3)
+    {
+        padding: 8px 3px 9px 3px;
+    }
+
+    .searchDesign>span:nth-child(4)
+    {
+        padding:8px 5px 9px 5px;
+    }
+
+    .ShoppingButton
+    {
+        display:none;
+    }
+
+    #banner
+    {
+        grid-template-columns: 1fr;
+        top:45%;
+    }
+
+
+    #clothesGallery1
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #clothesGallery1 > div:nth-child(1)
+    {
+    
+            grid-column-start: 1;
+            grid-column-end: 4;
+    }
+
+    #allDenim
+    {
+
+        grid-template-columns: 1fr;
+        height: 580px;
+
+    }
+
+
+    #allDenim > div:nth-child(1) > div
+    {
+        width: 60%;
+        padding:30px 30px;
+    
+    }
+
+
+    #allDenim > div:nth-child(2)
+    {
+      
+        display:none;
+    }
+
+        
+    .DenminSpecialFont
+    {
+        
+        font-family: DINNeuzeitGroteskLTW01-BdCn;
+        font-size: 2rem;
+        padding: 20px 0px;
+        color:  var(--special-font-color-for-heading);
+    }
+
+    .demip2
+    {
+        padding: 10px 0px 30px 0px;
+    
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+    {
+        padding-left:50px;
+        padding-right: 50px;
+
+    }
+
+
+    .bubble6 
+    {
+      width: 240px;
+      top:40px;
+        
+    }
+      
+      
+      
+      .bubble6 > h2
+      {
+        top:-23px;
+        left:70px;
+        font-size: 35px;   
+      }
+
+    
+      .bubble6 > p
+      {
+          font-size: 16px;
+  
+      }
+
+      #JeanGallary
+      {
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      #JeanGallary > div
+        {
+            padding-bottom: 40px;
+        }
+
+      #AllDenimButton
+        {
+        
+            top:308px;
+
+        }
+
+    
+     
+      
+      .socialMediaAlign
+      {
+          text-align: center;
+          padding:40px 15px;
+      }
+        
+      .socialImg
+      {
+          text-align: center;
+          padding: 15px 15px;
+      }
+      
+      
+      
+
+        
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) 
+{  
+
+    #hero
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+        
+        
+    }
+
+    #hero > div:nth-child(1)
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #hero > div:nth-child(1) > span 
+    {
+        display:inline-block;
+        text-align: right;
+        width:100%;
+        
+    }
+
+    #hero > div:nth-child(1) > p 
+    {
+       display:none;
+        
+    }
+
+    
+
+
+    #heroMale
+    {
+        display:none;
+    }
+
+    #banner
+    {
+       
+        top:60%;
+    }
+
+    .responsiveSearch
+    {
+        display: unset;
+    }
+
+    #clothesGallery1
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #clothesGallery1 > div:nth-child(1)
+    {
+    
+            grid-column-start: 1;
+            grid-column-end: 3;
+    }
+
+    #allDenim
+    {
+
+
+        height: 480px;
+
+    }
+
+    #allDenim > div:nth-child(1) > div
+    {
+        width: 70%;
+        padding:20px 20px;
+    
+    }
+
+        #Earth_Friendly
+    {
+    
+        grid-template-columns: 1fr;
+    
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(1)
+    {
+        width: 80%;
+        height:80vh;;
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(1) img
+    { 
+        width:80%
+       
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+    {
+        
+        padding-left:50px;
+        padding-right: 50px;
+      
+    }
+
+    
+
+    #JeanGallary
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #JeanGallary span  
+    {
+        text-align: left;
+    }
+
+    #JeanGallary > div
+      {
+          padding-bottom: 40px;
+      }
+
+      #AllDenimButton
+      {
+      
+          top:308px;
+
+      }
+
+
+
+
+    
+}
+
+/* Special Case Adjustment */
+@media (max-width: 678.98px) 
+{
+    #hero > div:nth-child(1) > p
+    {
+        display:none;
+        justify-content: center;
+    }
+
+    .dropDown
+    {
+        display: unset;
+        font-size:35px;
+        color:var(--special-red-background-color);
+    }
+
+    .hamBurgerMenu
+    {
+        display:none;
+    }
+
+    header > div:nth-child(1)
+    {
+        display: none;
+ 
+    }
+
+    header 
+    {  
+        text-align: center; 
+
+    }
+
+    header > nav
+    {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+
+
+    #JeansSection h3
+    {
+        text-align: center;
+        padding:90px 10px 5px 10px;
+    }
+    #JeansSection > div > p:nth-child(2)
+    {
+       
+        padding: 20px 20% 10px 20%;
+        text-align: center;
+    }
+    
+    #JeansSection > div > p:nth-child(3)
+    {
+    
+        padding: 10px 15% 50px 15%;
+        text-align: center;
+    }
+
+      #AllDenimButton
+      {
+      
+          display:none;
+
+      }
+
+   
+    
+      #social > div span
+    {
+        font-size: 2rem;
+       
+        
+       color:var(--text-color-white);
+    }
+    
+    .socialMediaAlign
+    {
+        text-align: center;
+        padding:40px 10px;
+    }
+      
+    .socialImg
+    {
+        text-align: center;
+        padding: 15px 10px;
+    }
+    
+    
+    
+
+   
+
+   
+}
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) 
+{  
+
+    .gridTemp3Cols
+    {
+        grid-template-columns: 1fr;
+    }
+
+   
+
+ 
+    header > nav li:nth-child(5)
+    {
+
+     padding-right: 5px;
+
+    }
+
+    #banner > div:nth-child(2) > h1
+    {
+        font-size: 1.5rem;
+        word-spacing: 1px;
+
+
+    }
+
+
+    #banner > div:nth-child(2) > p
+    {
+        font-size:.8rem;
+        font-weight: 700;
+        font-family: roboto-thin, roboto, sans-serif;
+        padding-top: 5px;
+        
+
+    }
+
+    #banner
+    {
+       
+        top:45%;
+    }
+
+
+    #clothesGallery1
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #clothesGallery1 > div:nth-child(1)
+    {
+    
+            grid-column-start: 1;
+            grid-column-end: 2;
+    }
+
+    #allDenim > div:nth-child(1) > div
+    {
+        width: 80%;
+        padding:15px 15px;
+    
+    }
+
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(1)
+    {
+        height: 60vh;
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(1) img
+    { 
+        width:80%;
+        height: 90%
+       
+    }
+
+    #Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+    {
+        
+        padding-left:45px;
+        padding-right: 45px;
+        padding-top:30px;
+        padding-bottom: 30px;
+      
+    }
+
+
+    #JeanGallary
+    {
+        grid-template-columns: 1fr;
+        width:80%
+    }
+
+    #JeanGallary > div
+      {
+          padding-bottom: 40px;
+      } 
+      
+      #JeansSection > div > h3
+      {
+          padding: 120px 10px 5px 10px;
+      }
+ 
+
+
+
+
+    #JeansSection > div > p:nth-child(2)
+    {
+       
+        padding: 20px 10% 10px 10%;
+    }
+    
+    #JeansSection > div > p:nth-child(3)
+    {
+    
+        padding: 10px 8% 50px 8%;
+    }
+
+
+    #social
+    {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #social > div span
+    {
+        font-size: 1.5rem;
+       
+        
+       color:var(--text-color-white);
+    }
+    
+    .socialMediaAlign
+    {
+        text-align: center;
+        padding:40px 10px;
+    }
+      
+    .socialImg
+    {
+    
+        display:none;
+    }
+    
+    
+    
+
+
+
+}
+
+@media (max-width: 351.98px) 
+{
+  
+    .searchDesign> span:nth-child(3)
+        {
+            display: none;
+        }
+
+        #allDenim > div:nth-child(1) > div
+        {
+            width: 90%;
+            padding:10px 10px;
+        
+        }
+
+
+
+        #Earth_Friendly > div:nth-child(1) > div:nth-child(1) img
+        { 
+            width:100%;
+            height: 90%
+        
+        }
+
+        #Earth_Friendly > div:nth-child(1) > div:nth-child(2)
+        {
+            
+            padding-left:5px;
+            padding-right: 5px;
+
+        }
+
+
+        .bubble6 
+        {
+          width: 195px;
+          top:20px;
+            
+        }
+          
+          
+          
+          .bubble6 > h2
+          {
+            top:-23px;
+            left:40px;
+            font-size: 35px;   
+          }
+    
+        
+          .bubble6 > p
+          {
+              font-size: 14px;
+      
+          }
+
+          #specialButton
+          {
+    
+              bottom:35px;
+        
+          }
+
+          
+    #JeansSection > div > p:nth-child(2)
+    {
+       
+        padding: 20px 5% 10px 5%;
+    }
+    
+    #JeansSection > div > p:nth-child(3)
+    {
+    
+        padding: 10px 2% 50px 2%;
+    }
+
+    #social > div span
+    {
+        font-size: 1.5rem;
+       
+        
+       color:var(--text-color-white);
+    }
+    
+    .socialMediaAlign
+    {
+        text-align: center;
+        padding:45px 5px;
+    }
+    
+
+}
+
